@@ -1,0 +1,263 @@
+.home {
+	text-align: center;
+	color: #c6c6c6;
+	font-size: 14pt;
+	font-family: "Times New Roman", Times, serif;
+	background-color: black;
+}
+
+p {
+	margin: 2px;
+	color: #c6c6c6;
+}
+
+.copyright {
+	background-color: black;
+	padding-top: 35px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10pt;
+	color: #6b6b6b;
+}
+
+.nav {
+	z-index: 3;
+	font-size: 14pt;
+	padding-bottom: 2px;
+	padding-top: 0px;
+	font-variant: small-caps;
+	color: white;
+	background-color: black;
+}
+
+.navbutton {
+    padding-left: 0.5em;
+    padding-bottom: 0em;
+    padding-right: 1.5em;
+    padding-top: 0em;
+    z-index: 3;
+    text-decoration: none;
+    color: #a4a4a4;
+    width: auto;
+    float: left;
+    cursor: pointer;
+}
+
+.navbutton ul {
+	z-index: 3;
+	text-decoration: none;
+	display: none;
+	position: absolute;
+	background-color: #e6e6e6;
+	color: black;
+	margin: 0.1em 0 0 0;
+	padding: 0
+}
+
+.navbutton ul li {
+	z-index: 3;
+	padding: .2em;
+	font-size: 12pt;
+	display: block;
+}
+
+.navbutton:hover {
+	z-index: 3;
+	color: white;
+}
+
+.navbutton:hover ul {
+	z-index: 3;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.navbutton ul li:hover {
+	z-index: 3;
+	background-color: black;
+	color: white;
+}
+
+<!--[if IE]>
+<style type="text/css">
+/* Unfortunately, for some reason both IE6 and IE7 needs to be hacked. */
+.Menu1 li a {
+padding: 0 0 0 10px;
+}
+</style>
+<![endif]-->
+
+.banner {
+	border-style: none;
+	border-width: 0px;
+	height: 80px;
+	width: 800px;
+}
+
+
+.magic {
+	margin-left: auto;
+	margin-right: auto;
+	height: 515px;
+	width: 800px;
+	padding-top: 0px;
+}
+
+.noborder{
+	border-style: none;
+	border-width: 0 px;
+}
+
+.navwidth{
+	width: 700px;
+}
+
+.center{
+	text-align: left; /* To make IE display properly */
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+/*This is the beginning of the CSS for the wedding portfolio pages*/
+
+   	
+   
+     .addspace { margin-top: 27.5px; }
+     
+     .whitemouseover:hover{
+	 color: white;
+	 text-decoration: none;
+	 }
+    
+     .currentpagenumber{
+	  color: white;
+	  text-decoration: none;
+	   }
+    
+     .whitemouseover{
+	   text-decoration: none;
+	   color: #6b6b6b;
+	   }
+	   
+     .plainlinkdropdown{
+	   	padding: .3em;
+	   	text-decoration: none;
+	   	color: black;
+	   }
+	   
+     .plainlinkdropdown:hover{
+	   	background-color: black;
+	   	text-decoration: none;
+	   	color: white;
+	   }
+	   
+     .plainlink{
+	   	font-variant: small-caps;
+	   	background-color: black;
+	   	color: #a6a6a6;
+	   	text-decoration: none;
+	   }
+	   
+     .plainlink:hover{
+	   	background-color: black;
+	   	color: white;
+	   	text-decoration: none;
+	   }
+	   
+     .centerportfolio{
+	   	width: 784px;
+	   	margin-right: auto;
+	   	margin-left: auto;
+	   }
+	   
+     .alignportfolionav{
+	   	float: none;
+	   	z-index: 0;
+	   	margin-top: -15px;
+	   	width: 784px;
+	   	margin-right: auto;
+	   	margin-left: auto;
+	   }
+	   
+     .spacethumbs{
+	   	float: left;
+	   	border-spacing: 8px 4px;
+	   }
+     .floatleft{
+	   	float: left;
+	   }
+     .biotext{
+	   	text-align: left;
+	   	margin-top: 15px;
+	   }
+     .alignleft{
+	   	text-align: left;
+	   }
+     .largethumb{
+	   	width: 300px;
+	   }
+     .regthumb{
+	   	height: 80px;
+	   	width: 80px;
+	   	border-width: 0px;
+	   }
+     .largeimagevisible{
+	   	position: absolute;
+	   	visibility: visible;
+	   	height: 500px;
+	   	z-index: 1;
+	   	width: 500px;
+	   }
+     .largeimagehidden{
+	   	visibility: hidden;
+	   	height: 500px;
+	   	position: absolute;
+	   	width: 500px;
+	   	z-index: 1;
+	   }
+     .largealbumimagevisible{
+	   	right: auto;
+	   	left: auto;
+	   	visibility: visible;
+	   	z-index: 1;
+	   }
+     .largealbumimagehidden{
+	   	right: auto;
+	   	left: auto;
+	   	visibility: hidden;
+	   	z-index: 1;
+	   }
+     .albumimages{
+	   	margin-right: auto;
+	   	margin-left: auto;
+	   }
+     .albumgrid{
+	   }
+     .medthumb{
+	   	height: 100px;
+	   }
+     .largetext{
+	   	font-size: 20pt;
+	   	color: #a5a5a5;
+	   	font-variant: small-caps;
+	   }
+     .morelink{
+	   	font-family: Georgia, "Times New Roman", Times, serif;
+	   	font-style: italic;
+	   	font-weight: bold;
+	   	font-variant: small-caps;
+	   	color: #84cce6;
+	   	background-color: black;
+	   	text-decoration: none;
+	   }
+     .morelink:hover{
+	   	color: white;
+	   	background-color: black;
+	   	text-decoration: none;
+	   	font-variant: small-caps;
+	   	font-family: Georgia, "Times New Roman", Times, serif;
+	   }
+    
+
