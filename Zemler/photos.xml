@@ -1,0 +1,81 @@
+<gallery
+base = ""
+background = "#FFFFFF"
+banner = "#F0F0F0"
+text = "#000000"
+link = "#0000FF"
+alink = "#FF0000"
+vlink = "#800080"
+date = "12/29/07">
+	<sitename>Edited Engagement Photos</sitename>
+	<photographer>Diana Blazick</photographer>
+	<contactinfo>Click thumbnails to view high resolution files.</contactinfo>
+	<email>diana@heartstudios.com</email>
+	<security><![CDATA[]]> </security>
+
+<banner font = "Helvetica" fontsize = "3" color =  "#F0F0F0"> </banner>
+<thumbnail base ="thumbnails/" font = "Helvetica" fontsize = "4" color = "#F0F0F0" border = "0" rows = "2" col = "3"> </thumbnail> 
+<large base ="images/" font = "Helvetica" fontsize = "3" color = "#F0F0F0" border = "0"> </large>
+<images id = "images">
+
+<image
+path = "Christy and Danny final.jpg"
+width = "1300"
+height = "866"
+thumbpath = "Christy and Danny final.jpg"
+thumbwidth = "200"
+thumbheight = "133">
+</image>
+
+
+<image
+path = "IMG_7610.jpg"
+width = "866"
+height = "1300"
+thumbpath = "IMG_7610.jpg"
+thumbwidth = "133"
+thumbheight = "200">
+</image>
+
+
+<image
+path = "IMG_7630.jpg"
+width = "866"
+height = "1300"
+thumbpath = "IMG_7630.jpg"
+thumbwidth = "133"
+thumbheight = "200">
+</image>
+
+
+<image
+path = "IMG_7650e.jpg"
+width = "866"
+height = "1300"
+thumbpath = "IMG_7650e.jpg"
+thumbwidth = "133"
+thumbheight = "200">
+</image>
+
+
+<image
+path = "IMG_7709.jpg"
+width = "840"
+height = "1300"
+thumbpath = "IMG_7709.jpg"
+thumbwidth = "129"
+thumbheight = "200">
+</image>
+
+
+<image
+path = "IMG_7770.jpg"
+width = "836"
+height = "1300"
+thumbpath = "IMG_7770.jpg"
+thumbwidth = "128"
+thumbheight = "200">
+</image>
+
+</images>
+</gallery>

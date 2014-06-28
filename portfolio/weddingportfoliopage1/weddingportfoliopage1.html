@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+	<link rel="stylesheet" href="/heartstudios.css" type="text/css">
+	
+		<title>Wedding Portfolio Page 1 - Heart Studios</title>
+		
+		<meta name="DESCRIPTION" content="Heart Studios Wedding Photography and Custom Album Design by Diana Blazick.  You make the magic. We capture it." />
+<meta name="KEYWORDS" content="Diana Blazick photographer, album designer, wedding album, wedding photography, wedding pictures, wedding photographer, photography, photographer,
+wedding albums, wedding photojournalism, wedding day, wedding planning, wedding photographers Santa Monica, 
+wedding photographers Los Angeles, wedding photographers San Francisco, wedding photographers Berkely,
+wedding photographers Bay Area, wedding photographers Walnut Creek, wedding photographers Sonoma, wedding photographers Lafayette,
+wedding photographers California, wedding photographers Tahoe, bridal style, anniversary photography, portrait, portrait photographer, portrait photographer Bay Area, family portraits Bay Area">
+
+
+	</head>
+	
+<!-- this body tag with class home contains standard formatting for the entire site-->
+<body class="home">
+		
+		<p class="banner">
+		<a href="/">
+		<img src="/images/banner.jpg" alt="Heart Studios" class="noborder">
+		</a>
+		</p>
+		
+		<!-- tr and td tags form a 1 cell table to contain navigation and enabling it to be somewhat centered. The centering goes on the tr tag in the css and the exact allowable width of the nav box goes on the td in the css-->
+		
+<table class="center">
+	<tr>
+		<td class="navwidth">
+		
+		<!-- div tag below class="nav" wraps all navigation rows and cells for any standard menu bar formatting -->
+		<div class="nav">
+		
+			<div id="menu1" class="navbutton">
+			<a href="/portfolio/portfolio.html" class="plainlink">
+			Portfolio
+			</a>
+				<ul>
+					<li>
+						<a href="/portfolio/weddingportfoliopage1/weddingportfoliopage1.html" class="plainlinkdropdown">
+						Weddings</a>
+					</li>
+					
+					<li>
+						<a href="/portfolio/engagementportfoliopage1/engagementportfoliopage1.html" class="plainlinkdropdown">
+							Engagements
+						</a>
+					</li>
+					
+					<li>
+						<a href="/portfolio/portraitportfoliopage1/portraitportfoliopage1.html" class="plainlinkdropdown">
+							Portraits
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+			
+			<div id="menu2" class="navbutton">
+				<a href="/bio/bio.html" class="plainlink">
+				About
+				</a>
+				<!-- I am currently commenting out the different parts of the bio section and will have the bio page be the same as the future About Me page 
+					<ul>
+						<li>About Me</li>
+						<li>How to Get the Best Wedding Photography</li>
+						<li>Digital Photography in the Digital Age</li>
+						<li>Blog</li>
+						<li>Testimonials</li>
+					</ul>
+				-->
+			</div>
+			
+			<div id="menu3" class="navbutton">
+				<a href="/albums/albums.html" class="plainlink">
+				Albums
+				</a>
+			</div>
+			
+			<div id="menu4" class="navbutton">
+				<a href="/contact/contact.html" class="plainlink">
+				Contact
+				</a>
+				
+				<!-- 
+				<ul>
+					<li>option one</li>
+					<li>option two</li>
+					<li>option three</li>
+				</ul>
+				 -->
+				 
+			</div>
+			
+			
+			<div id="menu5" class="navbutton">
+				<a href="/recentevents/recentevents.html" class="plainlink">
+				Recent Events
+				</a>
+					
+			</div>
+			
+			<div id="menu6" class="navbutton">
+				<a href="/blog" class="plainlink">
+				Blog
+				</a>
+				
+			</div>
+		</div>
+		</td>
+	</tr>
+</table>		
+  
+   <script type="text/javascript">
+   //
+  
+  
+   function show(arg) {
+     var d=document
+     var zero=d.getElementById('Layer0')
+     if (zero) {
+       if (zero.style) {zero=zero.style}
+       zero.visibility="hidden"
+       }
+       
+   if (arg > Limm) {arg = 1}
+     var s='show'
+     var h='hide'
+     var obj=d.getElementById('Layer'+arg)
+     if  (obj.style) {obj=obj.style; s='visible'; h='hidden';}
+     for (var i=1; i <= Limm; i++) {
+        var temp = 'Layer'+i
+        var tObj=d.getElementById('thumb'+i)
+        if (tObj && tObj.style) {tObj=tObj.style}
+        
+        if (i==arg) {
+          obj.visibility=s;
+          if (tObj){
+            Curr=i
+            tObj.filter = "alpha(opacity:100)";
+            tObj.MozOpacity=1
+            tObj.opacity=1
+            //tObj.filters.alpha.opacity=100
+            }
+          }
+// I have commented out these intructions. To get vellum effect back on thumbnails that are not rolled over, change opacity settings below to alphaopacity 30 mozopacity .3 khtmlopacity .3 opacity ,3. Will also have to change opacity settings back to .3,30,.3 on the both thumbnails sections.
+
+
+      else {
+          temp=d.getElementById(temp)
+          if (temp.style) {temp=temp.style}
+          temp.visibility=h
+          if (tObj){
+            tObj.filter = "alpha(opacity:100)";
+            tObj.MozOpacity=1
+            tObj.KHTMLOpacity=1
+            tObj.opacity=1
+            //tObj.filters.alpha.opacity=30
+             }
+          }
+        }
+     }
+  
+  
+   var oldDiv
+   var newDiv
+   var st
+   function showMenu(arg){
+      var l=''
+      var s='show'
+      var h='hide'
+      var n='none'
+      var b='block'
+      var d=document
+      var Div=document.getElementById(arg)
+  
+      if (Div){
+        if (Div.style) {Div=Div.style; s='visible'; h='hidden';}
+        //Div.display=b
+        newDiv=Div
+        st=setTimeout("newDiv.display='block'",100)
+        }
+      else {release()}  
+      //if(d[arg+'gif']){d[arg+'gif'].src="../images/nav/nav-"+arg+"-blue.gif"}
+      if(oldDiv==arg){return}
+      if(oldDiv){
+        var OD = d.getElementById(oldDiv)
+        if(OD){
+          if(OD.style){OD=OD.style}
+          OD.display=n
+          }
+        //if(d[oldDiv+'gif']){d[oldDiv+'gif'].src="../images/nav/nav-"+oldDiv+".gif"}
+        }
+  
+      oldDiv=arg
+      }
+  
+   function release(){
+     clearTimeout(st)
+     var d=document
+     var n='none'
+     if(oldDiv){
+        var OD = d.getElementById(oldDiv)
+        if(OD){
+          if(OD.style){OD=OD.style}
+          OD.display=n
+          }
+        //if(d[oldDiv+'gif']){d[oldDiv+'gif'].src="../images/nav/nav-"+oldDiv+".gif"}
+        }
+      else {
+        var A=new Array('weddings', 'destination', 'portrait')
+        for (i=0; i<A.length; i++) {
+          var OD = d.getElementById(A[i])
+          if(OD){
+            if(OD.style){OD=OD.style}        
+            OD.display=n
+            }
+          }
+        }
+     }
+  
+  
+   </script>		
+
+  <!-- The background color has been changed to black here.The spacing to the left and right of the thumbnails and the top of the large picture is controlled here-->
+   <body bgcolor="#000000" onload="hideBlock()">
+
+<!-- This table allows the portfolio to be centered -->
+<table class="centerportfolio">
+	<tr>
+		<td>
+		
+		
+
+
+<!--This table formats the thumbnails into a grid. the spacing between the thumbnails is controlled here cellspacing="11.25px" cellspacingright="0" cellpadding="0"-->
+<table border="0" class="spacethumbs" onmouseover="release()">
+  <tr>
+    
+   <!--This next section is the first row of thumbnail images and controls rollovers.-->
+    <td>
+    <div class="addspace"></div>
+    <a onmouseover="show('1')" ><img src="images/1thumb.jpg" id="thumb1" class="regthumb"></a></td>
+    <td>
+    <div class="addspace"></div>
+    <a onmouseover="show('2')" ><img src="images/2thumb.jpg" id="thumb2" class="regthumb"></a></td>
+    <td>
+    <div class="addspace"></div>
+    <a onmouseover="show('3')" ><img src="images/3thumb.jpg" id="thumb3" class="regthumb"></a></td>
+
+    
+     <!-- The following td tag controls visibility of the thumbnails -->
+	 <td rowspan="0" align= "center" valign="top">
+	 
+
+<!-- These are the images that appear large when the thumbnails are rolled over. I still need to find a way to make the first image visible when the page first loads. I also need to add alt text to each tag so that the image names are not visible while the page is loading or when the mouse pauses over the image-->
+
+<div id="Layer1" class="largeimagevisible"><img src="images/1.jpg" border="0"><br></div>
+
+<div id="Layer2" class="largeimagehidden"><img src="images/2.jpg" border="0"><br></div>
+
+<div id="Layer3" class="largeimagehidden"><img src="images/3.jpg" border="0"><br></div>
+
+<div id="Layer4" class="largeimagehidden"><img src="images/4.jpg" border="0"><br></div>
+
+<div id="Layer5" class="largeimagehidden"><img src="images/5.jpg" border="0"><br></div>
+
+<div id="Layer6" class="largeimagehidden"><img src="images/6.jpg" border="0"><br></div>
+
+<div id="Layer7" class="largeimagehidden"><img src="images/7.jpg" border="0"><br></div>
+
+<div id="Layer8" class="largeimagehidden"><img src="images/8.jpg" border="0"><br></div>
+
+<div id="Layer9" class="largeimagehidden"><img src="images/9.jpg" border="0"><br></div>
+
+<div id="Layer10" class="largeimagehidden"><img src="images/10.jpg" border="0"><br></div>
+
+<div id="Layer11" class="largeimagehidden"><img src="images/11.jpg" border="0"><br></div>
+
+<div id="Layer12" class="largeimagehidden"><img src="images/12.jpg" border="0"><br></div>
+
+<div id="Layer13" class="largeimagehidden"><img src="images/13.jpg" border="0"><br></div>
+
+<div id="Layer14" class="largeimagehidden"><img src="images/14.jpg" border="0"><br></div>
+
+<div id="Layer15" class="largeimagehidden"><img src="images/15.jpg" border="0"><br></div>
+
+  		</td>
+  </tr>
+
+ <!-- this is where the second row of thumnails start. This section deals with thumbnail image sources and sizes. I have turned off the vellum by changing all opacity settings to 100/1 in the javascript and deleting opacity settings below-->
+
+  <tr>
+    <td><a onmouseover="show('4')" ><img src="images/4thumb.jpg" id="thumb4" class="regthumb"></a></td>
+    <td><a onmouseover="show('5')" ><img src="images/5thumb.jpg" id="thumb5" class="regthumb"></a></td>
+    <td><a onmouseover="show('6')" ><img src="images/6thumb.jpg" id="thumb6" class="regthumb"></a></td>
+   </tr>
+   
+   
+   <tr>
+    <td><a onmouseover="show('7')" ><img src="images/7thumb.jpg" id="thumb7" class="regthumb"></a></td>
+    <td><a onmouseover="show('8')" ><img src="images/8thumb.jpg" id="thumb8" class="regthumb"></a></td>
+    <td><a onmouseover="show('9')" ><img src="images/9thumb.jpg" id="thumb9" class="regthumb"></a></td>
+   </tr>
+   
+   
+   <tr>
+    <td><a onmouseover="show('10')" ><img src="images/10thumb.jpg" id="thumb10" class="regthumb"></a></td>
+    <td><a onmouseover="show('11')" ><img src="images/11thumb.jpg" id="thumb11" class="regthumb"></a></td>
+    <td><a onmouseover="show('12')" ><img src="images/12thumb.jpg" id="thumb12" class="regthumb"></a></td>
+   </tr>
+   
+   
+   <tr>
+    <td><a onmouseover="show('13')" ><img src="images/13thumb.jpg" id="thumb13" class="regthumb"></a></td>
+    <td><a onmouseover="show('14')" ><img src="images/14thumb.jpg" id="thumb14" class="regthumb"></a></td>
+    <td><a onmouseover="show('15')" ><img src="images/15thumb.jpg" id="thumb15" class="regthumb"></a></td>
+   </tr>
+</table>
+
+<!-- These are the closing tags for the table that centers the portfolio section -->
+		</td>
+	</tr>
+</table>
+
+
+<!-- This table goes around the portfolio navigation table to allow it to be aligned with the thumbnails -->
+
+<table class="alignportfolionav">
+	<tr>
+		<td>
+
+<!--The gallery navigation begins here-->  
+<table border="0" cellspacing="11.25px" cellspacingright="0" cellpadding="0" class="floatleft">
+  <tr>   	
+  	<td>
+   		<p class="arrow"> <!--As of yet the class arrow has no CSS associated with it.  -->
+		<img src="images/noarrow.jpg" class="noborder" width="15" height="15">
+		</a>
+		</p>
+   	</td>
+   	<!--This is the beginning of the page number links for gallery navigation-->
+   	<td>
+   		<p class="pagenumber"> <!-- As of yet the class pagenumber has no CSS associated with it. -->
+   		<a href="/portfolio/weddingportfoliopage1/weddingportfoliopage1.html" class="currentpagenumber">1</a> <!--This is the html for page #1 of the weddings gallery. Therefore, the class is currentpagenumber so that the CSS .currentpagenumber formats number 1 to remain illuminated in white.-->
+   		</p>
+   	</td>
+   	
+   	<td>
+   		<p class="pagenumber"> <!-- As of yet the class pagenumber has no CSS associated with it. -->
+   		<a href="/portfolio/weddingportfoliopage2/weddingportfoliopage2.html" class="whitemouseover">2</a>
+   		</p>
+   	</td>
+   	
+   	<td>
+   		<p class="pagenumber"> <!-- As of yet the class pagenumber has no CSS associated with it. -->
+   		<a href="/portfolio/weddingportfoliopage3/weddingportfoliopage3.html" class="whitemouseover">3</a>
+   		</p>
+   	</td>
+
+<!--  I am commenting out all but three page numbers. To add them back in, delete the starting bracket on this line and the matching tag that is before the next page arrow
+   	<td>
+   		<p class="pagenumber"> 
+   		<a href="THE LINK FOR THE WEDDING GALLERY PAGE NUMBER 4 GOES HERE" class="whitemouseover">4</a>
+   		</p>
+   	</td>
+   	
+   	<td>
+   		<p class="pagenumber">
+   		<a href="THE LINK FOR THE WEDDING GALLERY PAGE NUMBER 5 GOES HERE" class="whitemouseover">5</a>
+   		</p>
+   	</td> -->
+ 	 	
+  	
+   	<!-- This is the next page arrow-->
+   	<td>
+   		<p class="arrow"> <!--As of yet the class arrow has no CSS associated with it.  -->
+		<a href="/portfolio/weddingportfoliopage2/weddingportfoliopage2.html">
+		<img src="images/whiterightarrow.jpg" alt="Next Page" class="noborder" width="15" height="15">
+		</a>
+		</p>
+   	</td>
+   	
+  	
+  </tr>
+</table>
+
+
+<!-- These are the closing tags for the table that goes around the portfolio navigation table to allow it to be aligned with the thumbnails-->
+		</td>
+	</tr>
+</table>
+
+
+
+
+<script type="text/javascript">
+//2007-10-15T23:16:17Z - faJS
+var Limm=18
+Curr=Limm
+</script>
+<div id="Layer19" style="position:absolute; width:756px; height:115px; z-index:2;">
+<script type="text/javascript">
+var SB = 0
+function showBlock() {
+  var d=document
+  SB = 1 - SB
+  if(SB) {
+    d.forms[0].showButton.value="hide details"
+    arg = 'block'
+    }
+    else {
+    arg = 'none'
+    d.forms[0].showButton.value="show details"
+    }
+  var OD = d.getElementById('show')
+      if(OD){
+        if(OD.style){OD=OD.style}
+        OD.display=arg
+        }
+  }
+
+function hideBlock(){
+  var d=document
+  var OD = d.getElementById('show')
+      if(OD){
+        if(OD.style){OD=OD.style}
+        OD.display='none'
+        }
+ }
+
+ </script>
+
+
+
+</div>
+
+<!-- paragraph with class="copyright" is the copyright warning at the bottom of every page -->
+	<p class="copyright">
+	Copyright Heart Studios 2010. Reproductions prohibited.
+	</p>
+	
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2234526-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+   </body>
+</html>
