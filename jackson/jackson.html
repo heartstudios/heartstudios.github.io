@@ -2,49 +2,49 @@
 <html>
   	<head>
 	<link rel="stylesheet" href="/heartstudios.css" type="text/css">
-	
+
 		<title>Sesilee's Album Design - Heart Studios</title>
-		
+
 		<meta name="DESCRIPTION" content="Heart Studios Wedding Photography and Custom Album Design by Diana Blazick.  You make the magic. We capture it." />
 <meta name="KEYWORDS" content="Diana Blazick photographer, album designer, wedding album, wedding photography, wedding pictures, wedding photographer, photography, photographer,
-wedding albums, wedding photojournalism, wedding day, wedding planning, wedding photographers Santa Monica, 
+wedding albums, wedding photojournalism, wedding day, wedding planning, wedding photographers Santa Monica,
 wedding photographers Los Angeles, wedding photographers San Francisco, wedding photographers Berkely,
 wedding photographers Bay Area, wedding photographers Walnut Creek, wedding photographers Sonoma, wedding photographers Lafayette,
 wedding photographers California, wedding photographers Tahoe, bridal style, anniversary photography, portrait, portrait photographer, portrait photographer Bay Area, family portraits Bay Area">
 
 
 	</head>
-	
+
 <!-- this body tag with class home contains standard formatting for the entire site-->
 <body class="home">
-		
+
 		<p class="banner">
 		<a href="/">
 		<img src="/images/banner.jpg" alt="Heart Studios" class="noborder">
 		</a>
 		</p>
-		
+
 		<!-- tr and td tags form a 1 cell table to contain navigation and enabling it to be somewhat centered. The centering goes on the tr tag in the css and the exact allowable width of the nav box goes on the td in the css-->
-		
+
 <table class="center">
 	<tr>
 		<td class="navwidth">
-		
+
 		<!-- div tag below class="nav" wraps all navigation rows and cells for any standard menu bar formatting -->
 		<div class="nav">
-		
+
 			<div id="menu1" class="navbutton">
 			<a href="/portfolio/portfolio.html" class="plainlink">
 			Portfolio
 			</a>
-				
+
 			</div>
-			
+
 			<div id="menu2" class="navbutton">
 				<a href="/bio/bio.html" class="plainlink">
 				About
 				</a>
-				<!-- I am currently commenting out the different parts of the bio section and will have the bio page be the same as the future About Me page 
+				<!-- I am currently commenting out the different parts of the bio section and will have the bio page be the same as the future About Me page
 					<ul>
 						<li>About Me</li>
 						<li>How to Get the Best Wedding Photography</li>
@@ -54,53 +54,53 @@ wedding photographers California, wedding photographers Tahoe, bridal style, ann
 					</ul>
 				-->
 			</div>
-			
+
 			<div id="menu3" class="navbutton">
 				<a href="/albums/albums.html" class="plainlink">
 				Albums
 				</a>
-				
+
 			</div>
-			
+
 			<div id="menu4" class="navbutton">
 				<a href="/contact/contact.html" class="plainlink">
 				Contact
 				</a>
-				
-				<!-- 
+
+				<!--
 				<ul>
 					<li>option one</li>
 					<li>option two</li>
 					<li>option three</li>
 				</ul>
 				 -->
-				 
+
 			</div>
-			
-			
+
+
 			<div id="menu5" class="navbutton">
 				<a href="/recentevents/recentevents.html" class="plainlink">
 				Recent Events
 				</a>
-					
+
 			</div>
-			
-			<div id="menu6" class="navbutton">
+
+			<!-- <div id="menu6" class="navbutton">
 				<a href="/blog" class="plainlink">
 				Blog
 				</a>
-				
-			</div>
+
+			</div>-->
 		</div>
 		</td>
 	</tr>
-</table>		
+</table>
 
-  
+
    <script type="text/javascript">
    //
-  
-  
+
+
    function show(arg) {
      var d=document
      var zero=d.getElementById('Layer0')
@@ -108,7 +108,7 @@ wedding photographers California, wedding photographers Tahoe, bridal style, ann
        if (zero.style) {zero=zero.style}
        zero.visibility="hidden"
        }
-       
+
    if (arg > Limm) {arg = 1}
      var s='show'
      var h='hide'
@@ -118,7 +118,7 @@ wedding photographers California, wedding photographers Tahoe, bridal style, ann
         var temp = 'Layer'+i
         var tObj=d.getElementById('thumb'+i)
         if (tObj && tObj.style) {tObj=tObj.style}
-        
+
         if (i==arg) {
           obj.visibility=s;
           if (tObj){
@@ -146,8 +146,8 @@ wedding photographers California, wedding photographers Tahoe, bridal style, ann
           }
         }
      }
-  
-  
+
+
    var oldDiv
    var newDiv
    var st
@@ -159,14 +159,14 @@ wedding photographers California, wedding photographers Tahoe, bridal style, ann
       var b='block'
       var d=document
       var Div=document.getElementById(arg)
-  
+
       if (Div){
         if (Div.style) {Div=Div.style; s='visible'; h='hidden';}
         //Div.display=b
         newDiv=Div
         st=setTimeout("newDiv.display='block'",100)
         }
-      else {release()}  
+      else {release()}
       //if(d[arg+'gif']){d[arg+'gif'].src="../images/nav/nav-"+arg+"-blue.gif"}
       if(oldDiv==arg){return}
       if(oldDiv){
@@ -177,10 +177,10 @@ wedding photographers California, wedding photographers Tahoe, bridal style, ann
           }
         //if(d[oldDiv+'gif']){d[oldDiv+'gif'].src="../images/nav/nav-"+oldDiv+".gif"}
         }
-  
+
       oldDiv=arg
       }
-  
+
    function release(){
      clearTimeout(st)
      var d=document
@@ -198,15 +198,15 @@ wedding photographers California, wedding photographers Tahoe, bridal style, ann
         for (i=0; i<A.length; i++) {
           var OD = d.getElementById(A[i])
           if(OD){
-            if(OD.style){OD=OD.style}        
+            if(OD.style){OD=OD.style}
             OD.display=n
             }
           }
         }
      }
-  
-  
-   </script>		
+
+
+   </script>
 
   <!-- The background color has been changed to black here.The spacing to the left and right of the thumbnails and the top of the large picture is controlled here-->
    <body bgcolor="#000000" onload="hideBlock()">
@@ -231,9 +231,9 @@ wedding photographers California, wedding photographers Tahoe, bridal style, ann
     	<td><a onmouseover="show('8')" ><img src="images/8thumb.jpg" id="thumb8" class="smallthumb"></a></td>
     	<td><a onmouseover="show('9')" ><img src="images/9thumb.jpg" id="thumb9" class="smallthumb"></a></td>
     	<td><a onmouseover="show('10')" ><img src="images/10thumb.jpg" id="thumb10" class="smallthumb"></a></td>
-  
-    </tr>    
-     
+
+    </tr>
+
 </table>
 
 <table width="800px" class=center>
@@ -302,8 +302,8 @@ function hideBlock(){
 	<p class="copyright" style="margin-top:280px">
 	Copyright Heart Studios 2008. Reproductions prohibited.
 	</p>
-	
-	
+
+
 	<script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
